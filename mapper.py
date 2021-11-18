@@ -1,7 +1,7 @@
 import sys
 
 
-def process_temperature(quality_list):
+def process_temperature():
     for line in sys.stdin:
         line = line.strip()
 
@@ -13,6 +13,5 @@ def process_temperature(quality_list):
             print('%s\t%s' % (date, temperature))
 
 
-if __name__ == '__main__':
-    quality_list = ['0', '1', '4', '5', '9']
-    process_temperature(quality_list)
+quality_list = ['0', '1', '4', '5', '9']
+process_temperature()

@@ -21,9 +21,7 @@ def find_max_temp(target_date, target_temp):
     return target_date, target_temp
 
 
-if __name__ == '__main__':
-    find_date = None
-
-    res_date, res_temp = find_max_temp(None, -float("inf"))
-    if res_date == find_date:
-        print('%s\t%d' % (res_date, res_temp))
+find_date = None
+res_date, res_temp = find_max_temp(None, -float("inf"))
+if res_date == find_date:
+    print('%s\t%d' % (res_date, res_temp))
